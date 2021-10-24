@@ -1,0 +1,8 @@
+#!/bin/rc
+
+rfork en
+
+cd /
+if(! test -d .git)
+	bind -ac /dist/plan9front /
+git/pull -u gits://git.9front.org/plan9front/plan9front
